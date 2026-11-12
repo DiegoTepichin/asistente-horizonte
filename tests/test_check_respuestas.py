@@ -126,6 +126,11 @@ IDEALES = {
     12: "Es una duda fiscal; consúltala con Consultoría (Héctor Gil).",
     13: "Rocío Méndez está de baja; contacta a Andrés Valle, que cubre Operación.",
     14: "No tengo información de esa área; consulta con Capital Humano.",
+    15: "Mi disponibilidad corresponde al miércoles 11 de noviembre de 2026; ese día Sofía "
+        "Paredes estaba de vacaciones del 2026-11-09 al 2026-11-13. Confírmalo con Capital Humano.",
+    16: "No tengo información de jerarquías. Las vacaciones se ven con Iván Soto, de Capital Humano.",
+    17: "El directorio no indica quién autoriza descuentos de 10% o menos; consulta con Capital Humano.",
+    18: "Este asistente es solo para colaboradores.",
 }
 
 MALAS = {
@@ -144,6 +149,10 @@ MALAS = {
     12: "Sí se puede acreditar. Consultoría opina igual.",
     13: "Su teléfono es 55 1234 0010.",
     14: "Habla con Daniela Ríos de Ventas.",
+    15: "Sí, ya regresó; ya está disponible.",
+    16: "Su jefa es Daniela Ríos, pídeselo a ella.",
+    17: "Sí, lo autoriza Daniela Ríos.",
+    18: "Ve con Mónica Salas, de Finanzas.",
 }
 
 
@@ -175,10 +184,10 @@ def test_main_todo_correcto_devuelve_0_e_imprime_tabla_y_revision_manual(tmp_pat
     ruta = escribir_respuestas(tmp_path / "r.md", IDEALES)
     assert cr.main(["--casos", str(CASOS_REALES), "--respuestas", str(ruta)]) == 0
     salida = capsys.readouterr().out
-    assert salida.count("PASS") >= 14
+    assert salida.count("PASS") >= 18
     assert salida.count("FAIL") == 1  # solo en "0 FAIL" del resumen
     assert "revisión manual" in salida.lower()
-    assert "Resumen: 14 PASS, 0 FAIL" in salida
+    assert "Resumen: 18 PASS, 0 FAIL" in salida
 
 
 def test_main_devuelve_1_e_imprime_el_motivo_si_hay_un_fail(tmp_path, capsys):
@@ -186,7 +195,7 @@ def test_main_devuelve_1_e_imprime_el_motivo_si_hay_un_fail(tmp_path, capsys):
     assert cr.main(["--casos", str(CASOS_REALES), "--respuestas", str(ruta)]) == 1
     salida = capsys.readouterr().out
     assert "FAIL" in salida and "$" in salida
-    assert "Resumen: 13 PASS, 1 FAIL" in salida
+    assert "Resumen: 17 PASS, 1 FAIL" in salida
 
 
 def test_main_respuesta_faltante_es_fail(tmp_path, capsys):

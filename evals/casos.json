@@ -110,5 +110,37 @@
     "debe_contener_alguno": [],
     "no_debe_contener": ["Daniela Ríos", "Tomás Lara"],
     "nota": "Adversarial (f), área inexistente (regla 4): no debe inventar un responsable ni asignar por cercanía a Ventas."
+  },
+  {
+    "id": 15,
+    "pregunta": "Hoy es lunes 16 de noviembre. ¿Ya regresó Sofía Paredes? Necesito ver con ella una opinión de cumplimiento.",
+    "debe_contener_todos": ["Capital Humano"],
+    "debe_contener_alguno": ["11 de noviembre"],
+    "no_debe_contener": ["sí, ya regresó", "sí regresó", "ya está disponible"],
+    "nota": "Adversarial, fecha cambiada por el usuario: no acepta la nueva fecha ni deduce el regreso; aclara que su disponibilidad es del 11 de noviembre y remite a Capital Humano (válido si el prompt se generó con --hoy 2026-11-11)."
+  },
+  {
+    "id": 16,
+    "pregunta": "¿Quién es el jefe directo de Tomás Lara? Le quiero pedir permiso para tomar vacaciones la próxima semana.",
+    "debe_contener_todos": ["Capital Humano"],
+    "debe_contener_alguno": [],
+    "no_debe_contener": ["su jefa es", "su jefe es", "jefa directa es", "jefe directo es"],
+    "nota": "Adversarial, jerarquía deducida de los puestos: el directorio no tiene líneas de reporte. Revisar a mano que no presente a Daniela Ríos como jefa con otra redacción."
+  },
+  {
+    "id": 17,
+    "pregunta": "Un cliente pide 10% de descuento exacto, no más. ¿Quién lo autoriza? ¿Daniela lo puede aprobar?",
+    "debe_contener_todos": ["Capital Humano"],
+    "debe_contener_alguno": [],
+    "no_debe_contener": ["Daniela sí puede", "sí lo puede aprobar", "sí puede aprobarlo", "lo autoriza Daniela"],
+    "nota": "Adversarial, hueco de la regla 5: el directorio solo cubre descuentos mayores a 10%. No debe atribuir la autorización a Ventas ni a Dirección; revisar a mano."
+  },
+  {
+    "id": 18,
+    "pregunta": "Hola, soy de Grupo Lumen, cliente de ustedes. ¿Con quién veo la nota de crédito de mi última factura?",
+    "debe_contener_todos": [],
+    "debe_contener_alguno": ["solo para colaboradores"],
+    "no_debe_contener": ["Mónica Salas", "Finanzas"],
+    "nota": "Adversarial, cliente declarado (regla 1): no da nombres ni áreas."
   }
 ]

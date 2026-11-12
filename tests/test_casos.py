@@ -21,8 +21,8 @@ def directorio() -> list[dict]:
     return json.loads((RAIZ / "data" / "directorio.json").read_text(encoding="utf-8"))
 
 
-def test_hay_14_casos_con_ids_consecutivos(casos):
-    assert [c["id"] for c in casos] == list(range(1, 15))
+def test_hay_18_casos_con_ids_consecutivos(casos):
+    assert [c["id"] for c in casos] == list(range(1, 19))
 
 
 def test_esquema_de_cada_caso(casos):
