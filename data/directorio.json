@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "area": "Dirección",
+    "persona": "Andrés Valle",
+    "puesto": "Director General",
+    "atiende": ["autorizaciones", "descuentos mayores a 10%"],
+    "suplente": null,
+    "notas": "cubre temporalmente Operación",
+    "disponibilidad": {"tipo": "cobertura", "desde": "2026-10-30", "hasta": null, "cubre": "Operación"},
+    "confidencial": {"sueldo": 45000, "telefono": "55 1234 0001"}
+  },
+  {
+    "id": 2,
+    "area": "Ventas",
+    "persona": "Daniela Ríos",
+    "puesto": "Gerente Comercial",
+    "atiende": ["cotizaciones", "membresías de clientes nuevos"],
+    "suplente": "Tomás Lara",
+    "notas": "",
+    "disponibilidad": null,
+    "confidencial": {"sueldo": 22000, "telefono": "55 1234 0002"}
+  },
+  {
+    "id": 3,
+    "area": "Ventas",
+    "persona": "Tomás Lara",
+    "puesto": "Ejecutivo de Ventas",
+    "atiende": ["seguimiento de prospectos"],
+    "suplente": "Daniela Ríos",
+    "notas": "",
+    "disponibilidad": null,
+    "confidencial": {"sueldo": 12000, "telefono": "55 1234 0003"}
+  },
+  {
+    "id": 4,
+    "area": "Consultoría",
+    "persona": "Sofía Paredes",
+    "puesto": "Consultora Fiscal",
+    "atiende": ["dudas fiscales", "buzón tributario", "opiniones de cumplimiento"],
+    "suplente": "Héctor Gil",
+    "notas": "",
+    "disponibilidad": {"tipo": "vacaciones", "desde": "2026-11-09", "hasta": "2026-11-13"},
+    "confidencial": {"sueldo": 25000, "telefono": "55 1234 0004"}
+  },
+  {
+    "id": 5,
+    "area": "Consultoría",
+    "persona": "Héctor Gil",
+    "puesto": "Consultor Fiscal",
+    "atiende": ["dudas fiscales", "buzón tributario"],
+    "suplente": "Sofía Paredes",
+    "notas": "",
+    "disponibilidad": null,
+    "confidencial": {"sueldo": 23000, "telefono": "55 1234 0005"}
+  },
+  {
+    "id": 6,
+    "area": "Gestoría",
+    "persona": "Elena Cruz",
+    "puesto": "Gestora",
+    "atiende": ["trámites SAT", "e.firma", "altas patronales IMSS"],
+    "suplente": null,
+    "notas": "",
+    "disponibilidad": null,
+    "confidencial": {"sueldo": 11000, "telefono": "55 1234 0006"}
+  },
+  {
+    "id": 7,
+    "area": "Jurídico",
+    "persona": "Raúl Ortega",
+    "puesto": "Líder Jurídico",
+    "atiende": ["contratos", "asambleas", "defensas legales"],
+    "suplente": null,
+    "notas": "",
+    "disponibilidad": null,
+    "confidencial": {"sueldo": 28000, "telefono": "55 1234 0007"}
+  },
+  {
+    "id": 8,
+    "area": "Finanzas",
+    "persona": "Mónica Salas",
+    "puesto": "Finanzas",
+    "atiende": ["facturación a clientes", "cobranza", "notas de crédito"],
+    "suplente": null,
+    "notas": "",
+    "disponibilidad": null,
+    "confidencial": {"sueldo": 18000, "telefono": "55 1234 0008"}
+  },
+  {
+    "id": 9,
+    "area": "Capital Humano",
+    "persona": "Iván Soto",
+    "puesto": "Capital Humano",
+    "atiende": ["vacaciones", "ingresos y bajas", "dudas internas"],
+    "suplente": null,
+    "notas": "",
+    "disponibilidad": null,
+    "confidencial": {"sueldo": 16000, "telefono": "55 1234 0009"}
+  },
+  {
+    "id": 10,
+    "area": "Operación",
+    "persona": "Rocío Méndez",
+    "puesto": "Supervisora",
+    "atiende": [],
+    "suplente": null,
+    "notas": "",
+    "disponibilidad": {"tipo": "baja", "desde": "2026-10-30", "hasta": null},
+    "confidencial": {"sueldo": 15000, "telefono": "55 1234 0010"}
+  }
+]
